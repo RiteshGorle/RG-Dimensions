@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--------------------------------------------------->
+<!--------------- TITLE OF WEBSITE PAGE ------------->
+<!--------------------------------------------------->
+<title>Gorle Dimensions</title>
+
+<!--------------------------------------------------->
+<!--------------------- META SEO WORK --------------->
+<!--------------------------------------------------->
+  <meta charset="utf-8">
+  <meta name="description" content="Measurements">
+  <meta name="keywords" content="Measurements">
+  <meta name="author" content="Ritesh Gorle">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">  
+
+
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 4 ----------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery library End -->
+
+
+<!--------------------------------------------------->
+<!-----------------Font Awesome Icon ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!------------------ Font Awesome Kit --------------->
+<!--------------------------------------------------->
+<script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+
+<!--------------------------------------------------->
+<!--------------------- Google Font ----------------->
+<!--------------------------------------------------->
+<link href='https://fonts.googleapis.com/css?family=Bungee Spice' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
+
+
+
+<!--------------------------------------------------->
+<!----------------------- CSS ----------------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>  WebSite Name: Gorle Dimensions <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Made by: Ritesh Gorle       <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Created: September 2022     <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Content: Measurements       <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Table Of Contents:
+
+SECTION 01: NAVIGATION BAR 
+SECTION 02: WEIGHT 
+SECTION 03: TEMPRETURE
+SECTION 04: LENGTH 01
+SECTION 05: LENGTH 02
+SECTION 06: SPEED
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!----------------------------= SECTION 01: NAVIGATION BAR START =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+<header>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% NAVIGATION ITEMS %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="icon-bar">
+  <a href="index.html"><h5 style="font-size:3vw;"><strong>Home</strong></h5></a> 
+  <a href="#weight"><h5 style="font-size:3vw;"><strong>Weight</strong></h5></a> 
+  <a href="#temperature"><h5 style="font-size:3vw;"><strong>Temperature</strong></h5> </a> 
+  <a href="#length"><h5 style="font-size:3vw;"><strong>Length</strong></h5></a>
+  <a href="#speed"><h5 style="font-size:3vw;"><strong>Speed</strong></h5></a> 
+</div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div align="center"><h1 style="font-size:9vw; font-family: 'Bungee Spice'; background-color: black;">
+                          Gorle Dimensions</h1></div>
+
+</header>
+<!--------------------------------===============================------------------------------------->
+<!-------------------------------= SECTION 01: NAVIGATION BAR END =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 02: WEIGHT START   =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+<section id="weight" class="WEIGHT" style="background-color: #ffff00">
+
+<div class="container-fluid"> <!------------------- Container start ------------------------------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 02: HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <h2 align="center">Weight Converter</h2>
+  <p align="center">Use the search box to find your required metric converter.</p>
+
+<div class="row"> <!------------------- Row start ------------------------------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 02: CONVERTER 01 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div id="id2" class="col pt-2 pb-2 mb-1">
+
+<div id="id1" class="container" align="center" style="background-color: #99ffcc;">
+  <h2>Kilograms to Pounds:</h2>
+<p>lb=kg*2.2046</p>
+
+<p>
+  <label><strong>Kilograms</strong></label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverterpound(this.value)" onchange="weightConverterpound(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Pounds:</strong> <span id="outputPounds"></span></p>
+
+  
+</div>
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function weightConverterpound(valNum) {
+  document.getElementById("outputPounds").innerHTML=valNum*2.2046;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 02: CONVERTER 02 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col pt-2 pb-2 mb-1" id="id2" >
+      
+<div class="container" id="id1" align="center" style="background-color: #99ffcc;">
+
+<h2>Kilograms to Grams:</h2>
+<p>g=kg*1000</p>
+
+<p>
+  <label><strong>Kilograms</strong></label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverterGrams(this.value)" onchange="weightConverterGrams(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Grams:</strong> <span id="outputGrams"></span></p>
+
+  
+</div>
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function weightConverterGrams(valNum) {
+  document.getElementById("outputGrams").innerHTML=valNum*1000;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 02: CONVERTER 03 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col pt-2 pb-2 mb-1" id="id2" >
+
+<div class="container" id="id1" align="center" style="background-color: #99ffcc;">
+
+<h2>Kilograms to Ounces:</h2>
+<p>oz=kg*35.274</p>
+
+<p>
+  <label><strong>Kilograms</strong></label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverterOunces(this.value)" onchange="weightConverterOunces(this.value)">
+</p>
+<p class="bg-danger" style="border-radius:20px ;"><strong>Ounces:</strong> <span id="outputOunces"></span></p>
+
+  
+</div>
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function weightConverterOunces(valNum) {
+  document.getElementById("outputOunces").innerHTML=valNum*35.274;
+}
+</script>
+
+</div>
+
+</div><!------------------- Row End ------------------------------>
+</div><!------------------- Container End ------------------------------>
+</section> <br>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=    SECTION 02: WEIGHT END   =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 03: TEMPERATURE START =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+<section id="temperature" class="TEMPRETURE ">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 03: HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="container-fluid"> <!------------------- Container Start ------------------------------>
+  <h2 align="center">Temperature Converter</h2>
+  <p align="center">Use the search box to find your required metric converter.</p>
+
+  <div class="row"><!------------------- Row Start ------------------------------>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 03: CONVERTER 01 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col pt-2 pb-2" id="id2" >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+
+<h2>Fahrenheit to Celsius</h2>
+<p>℃=(℉-32)/1.8 </p>
+
+<p>
+  <label><strong>Fahrenheit</strong></label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverterCelcius(this.value)" onchange="temperatureConverterCelcius(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Celcius: </strong><span id="outputCelcius"></span></p>
+  
+</div>
+
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function temperatureConverterCelcius(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 03: CONVERTER 02 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<div class="col pt-2 pb-2" id="id2" >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+  
+<h2>Celsius to Kelvin</h2>
+<p>K=℃+273.15 </p>
+
+<p>
+  <label><strong>Celsius</strong></label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterKelvin(this.value)" onchange="temperatureConverterKelvin(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Kelvin:</strong> <span id="outputKelvin"></span></p>
+
+</div>
+
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function temperatureConverterKelvin(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=valNum+273.15;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 03: CONVERTER 03 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col pt-2 pb-2" id="id2" >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+  
+<h2>Kelvin to Fahrenheit</h2>
+<p>℉=((K-273.15)*1.8)+32 </p>
+
+<p>
+  <label><strong>Kelvin</strong></label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverterFahrenheit(this.value)" onchange="temperatureConverterFahrenheit(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Fahrenheit:</strong> <span id="outputFahrenheit"></span></p>
+
+</div>
+
+<!------------------- JAVASCRIPT ------------------------------>
+<script>
+function temperatureConverterFahrenheit(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=((valNum-273.15)*1.8)+32;
+}
+</script>
+
+</div>
+
+
+</div><!------------------- Row End ------------------------------>
+</div><!------------------- Container End------------------------------>
+  
+</section> <br>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=  SECTION 03: TEMPRETURE END  =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 04: LENGTH 01 START  =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+<section id="length" class="LENGTH-01" style="background-color:yellow;">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 04: HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="container-fluid"><!------------------- Container Start ------------------------------>
+  <h2 align="center">Length Converter</h2>
+  <p align="center">Use the search box to find your required metric converter.</p>
+
+
+<!-- Four columns: 25% width on large and up -->
+
+<div class="row "><!------------------- Row Start ------------------------------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 04: CONVERTER 01 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2" >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Feet to Meters</h4>
+<p>m=ft/3.2808</p>
+
+<p>
+  <label><strong>Feet</strong></label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterMeters(this.value)" onchange="LengthConverterMeters(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Meters:</strong> <span id="outputMeters"></span></p>
+
+</div>
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterMeters(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 04: CONVERTER 02 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2"  >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+<h4>Feet to Inches</h4>
+<p>in=ft*12</p>
+
+<p>
+  <label><strong>Feet</strong></label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterInches(this.value)" onchange="LengthConverterInches(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Inches:</strong> <span id="outputInches"></span></p>
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterInches(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*12;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 04: CONVERTER 03 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2"  >
+
+<div   id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Feet to Cm</h4>
+<p>cm=ft/0.032808</p>
+
+<p>
+  <label><strong>Feet</strong></label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConvertercm(this.value)" onchange="LengthConvertercm(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>cm: </strong><span id="outputcm"></span></p>
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConvertercm(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 04: CONVERTER 04 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2" >
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+<h4>Feet to Km</h4>
+<p>km=ft/3280.8</p>
+
+<p>
+  <label><strong>Feet</strong></label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterKilometers(this.value)" onchange="LengthConverterKilometers(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Kilometers:</strong> <span id="outputKilometers"></span></p>
+  
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterKilometers(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/3280.8;
+}
+</script>
+
+</div>
+
+</div><!------------------- Row End ------------------------------>
+</div><!------------------- Container End ------------------------------>
+  
+</section>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 04: LENGTH 01 END  =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=  SECTION 05: LENGTH 02 START =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+<section class="LENGTH-02 " style="background-color:yellow;">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 05: HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<div class="container-fluid"><!------------------- Container Start ------------------------------>
+ 
+<!-- Four columns: 25% width on large and up -->
+
+<div class="row "><!------------------- Row Start ------------------------------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 05: CONVERTER 01 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg mb-1" id="id2">
+
+<div  id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Meters to Feet</h4>
+<p>ft=m*3.2808</p>
+
+<p>
+  <label><strong>Meters</strong></label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterFeet(this.value)" onchange="LengthConverterFeet(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Feet:</strong> <span id="outputFeet"></span></p>
+  
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterFeet(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*3.2808;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 05: CONVERTER 02 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg mb-1" id="id2">
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Meters to Inches</h4>
+<p>in=m*39.370</p>
+
+<p>
+  <label><strong>Meters</strong></label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterInches1(this.value)" onchange="LengthConverterInches1(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Inches:</strong> <span id="outputInches1"></span></p>
+  
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterInches1(valNum) {
+  document.getElementById("outputInches1").innerHTML=valNum*39.370;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 05: CONVERTER 03 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg mb-1" id="id2" >
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Meters to Yards</h4>
+<p>yd=m*1.0936</p>
+
+<p>
+  <label><strong>Meters</strong></label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterYards(this.value)" onchange="LengthConverterYards(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Yards:</strong> <span id="outputYards"></span></p>
+
+  
+</div>
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterYards(valNum) {
+  document.getElementById("outputYards").innerHTML=valNum*1.0936;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 05: CONVERTER 04 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg mb-1" id="id2">
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+
+<h4>Meters to Miles</h4>
+<p>mi=m*0.00062137</p>
+
+<p>
+  <label><strong>Meters</strong></label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterMiles(this.value)" onchange="LengthConverterMiles(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Miles:</strong> <span id="outputMiles"></span></p>
+
+
+</div>
+<!------------------- JavaScript ------------------------------>
+<script>
+function LengthConverterMiles(valNum) {
+  document.getElementById("outputMiles").innerHTML=valNum*0.00062137;
+}
+</script>
+</div>
+
+</div><!------------------- Row End ------------------------------>
+</div><!------------------- Container End ------------------------------>
+  
+</section> <br>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 05: LENGTH 02 END  =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=    SECTION 06: SPEED START  =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<section id="speed" class="SPEED ">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 06: HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<div class="container-fluid"><!------------------- Container Start ------------------------------>
+  <h2 align="center">Speed Converter</h2>
+  <p align="center">Use the search box to find your required metric converter.</p>
+
+
+<!-- Four columns: 25% width on large and up -->
+
+<div class="row "><!------------------- Row Start ------------------------------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 06: CONVERTER 01 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2" >
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+<h4>MPH to KPH</h4>
+<p>KPH=MPH*1.609344</p> 
+
+<p>
+  <label><strong>MPH</strong></label>
+  <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverterKPH(this.value)" onchange="speedConverterKPH(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>KPH:</strong> <span id="outputKPH"></span></p>
+  
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function speedConverterKPH(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 06: CONVERTER 02 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2" >
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+<h4>KPH to Knots</h4>
+<p>knots=KPH/1.852</p>
+
+<p>
+  <label><strong>KPH</strong></label>
+  <input id="inputKPH" type="number" placeholder="KPH" oninput="speedConverterKnots(this.value)" onchange="speedConverterKnots(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Knots:</strong> <span id="outputKnots"></span></p>
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function speedConverterKnots(valNum) {
+  document.getElementById("outputKnots").innerHTML=valNum/1.852;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 06: CONVERTER 03 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<div class="col-lg" id="id2" >
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+<h4>Knots to Mach</h4>
+<p>Mach=knots/661.4708</p>
+
+<p>
+  <label><strong>Knots</strong></label>
+  <input id="inputKnots" type="number" placeholder="Knots" oninput="speedConverterMach(this.value)" onchange="speedConverterMach(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>Mach:</strong> <span id="outputMach"></span></p>
+
+</div>
+<!------------------- JavaScript ------------------------------>
+<script>
+function speedConverterMach(valNum) {
+  document.getElementById("outputMach").innerHTML=valNum/661.4708;
+}
+</script>
+
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 06: CONVERTER 04 %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="col-lg" id="id2" >
+
+<div id="id1" align="center" style="background-color: #99ffcc;">
+<h4>Mach to MPH</h4>
+<p>MPH=Mach*761.207</p>
+
+<p>
+  <label><strong>Mach</strong></label>
+  <input id="inputMach" type="number" placeholder="Mach" oninput="speedConverterMPH(this.value)" onchange="speedConverterMPH(this.value)">
+</p>
+
+<p class="bg-danger" style="border-radius:20px ;"><strong>MPH:</strong> <span id="outputMPH"></span></p>
+</div>
+
+<!------------------- JavaScript ------------------------------>
+<script>
+function speedConverterMPH(valNum) {
+  document.getElementById("outputMPH").innerHTML=valNum*761.207;
+}
+</script>
+
+</div>
+
+
+</div><!------------------- Row End ------------------------------>
+</div><!------------------- Container End ------------------------------>
+  
+</section> 
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=     SECTION 06: SPEED END   =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% HR TAG %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<hr class="new2">
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 07: CALCULATOR START =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+<!-- 50%/50% split -->
+<div class="container-fluid pt-3 pb-3"><!----- Container start------>
+
+
+<div class="row"><!----- Row start------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 07: FIRST COLUMN %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <div class="col-lg " align="center">
+
+      <img src="simple calculator.jpg" src="img_nature.jpg"  class="responsive" width="50"  alt="simple">
+       
+       <a href="https://riteshgorle.github.io/RG-Simple-Calculator/"><button type="button" class="button-three btn btn-primary mt-1">Calculate</button></a>
+      
+    </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 07: FIRST COLUMN %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <div class="col-lg " align="center">
+      <img src="sci-calculator.jpg" src="img_nature.jpg"  class="responsive" width="50"  alt="sci">
+      
+      <a href="https://riteshgorle.github.io/RG-scientific-calculator/"><button type="button" class="button-three btn btn-primary mt-1">Calculate</button></a>
+    </div>
+
+
+  </div><!----- Row End------>
+</div><!----- Row End------>
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 07: CALCULATOR END =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% HR TAG %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<hr class="new2">
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 08: FOOTER START   =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+<footer class="container-fluid pb-2 pt-2" style="background-color: #00ff7f;"><!----- Container start------>
+
+
+<div class="row"><!----- ROW start------>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% HEADING %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <div class="col" align="center" >
+      <h6 style="font-size:4vw;"><img id="my-content" src="logo1.png" width="70px" alt=""> Gorle Dimensions</h6>
+      <h5 id="my-content" style="font-size:2vw;"><strong>Contact Us: +91 8983724975</strong></h5>
+    </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% SOCIAL ICONS %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <div class="col" id="my-content" align="center" >
+      <h2>Follow Us</h2> <br>
+
+<div class="icons">
+    <ul >
+        <li><a href="#top"><i class="fa fa-twitter" style="font-size:30px;"></i></a></li>
+        <li><a href="#top"><i class="fa fa-instagram" style="font-size:30px;"></i></a></li>
+        <li><a href="#top"><i class="fa fa-facebook" style="font-size:30px;"></i></a></li>
+        <li><a href="#top"><i class="fa fa-whatsapp" style="font-size:30px;"></i></a></li>
+    </ul>
+</div>
+
+  </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%% COPYRIGHT %%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <div class="col" align="center" >
+      <h6 style="font-size:3vw;">© 2022 <br> Gorle Dimensions. <br>All rights reserved.</h6>
+    </div>
+
+  </div><!----- ROW End------>
+</footer><!----- Container End------>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=     SECTION 08: FOOTER END   =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+</body>
+</html>
